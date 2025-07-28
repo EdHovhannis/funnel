@@ -1,0 +1,40 @@
+{
+  "name": "sber-tech-indicator-pvm-inda_panel-funnel",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch",
+    "sign": "grafana-toolkit plugin:sign",
+    "start": "yarn watch",
+    "lint": "eslint . --ext ts,.tsx src/",
+    "lint:fix": "eslint \"src/**/*.{js,tsx,ts}\" --fix"
+  },
+  "author": "SBT Indicator",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@antv/g2plot": "^2.4.7",
+    "@grafana/data": "7.5.10",
+    "@grafana/runtime": "7.5.10",
+    "@grafana/toolkit": "7.5.10",
+    "@grafana/ui": "7.5.10",
+    "@types/lodash": "4.14.195",
+    "emotion": "10.0.27",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@ant-design/charts": "^1.3.4",
+    "@antv/g2": "4.1.40",
+    "lodash": "4.17.21"
+  },
+  "jestSonar": {
+    "reportPath": "coverage",
+    "reportFile": "sonar-report.xml",
+    "indent": 4
+  }
+}
